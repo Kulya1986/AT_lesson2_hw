@@ -1,0 +1,24 @@
+* {
+    font-family: 'El Messiri', sans-serif;
+    margin: 0;
+ }
+
+nav {
+    background-color: aqua;
+    border: 0.1rem solid black;
+ }
+
+section {
+    background-color: peru;
+    border: 0.1rem solid black;
+ }
+
+footer {
+    background-color: plum;
+    border: 0.1rem solid black;
+ }
+
+aside {
+    background-color: olive;
+    border: 0.1rem solid black;
+ }
