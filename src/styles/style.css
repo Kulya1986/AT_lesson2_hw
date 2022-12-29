@@ -4,21 +4,55 @@
  }
 
 nav {
-    background-color: aqua;
+    background-color: rgba(87, 250, 250, 0.595);
     border: 0.1rem solid black;
  }
 
-section {
+ main {
+    width: 100vw;
+    display: flex;
     background-color: peru;
+    /* border: 0.1rem solid black; */
+ }
+
+section {
+    /* display: flex; */
+    background-color: maroon;
     border: 0.1rem solid black;
  }
 
 footer {
+    display: flex;
     background-color: plum;
     border: 0.1rem solid black;
+    justify-content: center;
  }
 
 aside {
+    width: 25%;
+    display: inline-block;
     background-color: olive;
-    border: 0.1rem solid black;
+    
  }
+
+ .navbar { 
+    display: flex;
+    list-style: none;
+    padding: 1rem 1.5rem 1rem 0rem;
+ }
+
+.navbar > li {
+    padding: 0rem 1.5rem;
+}
+
+ li.searchForm {
+    margin-left: auto;
+ }
+
+ .navbar > li > a {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: rgb(163, 71, 5);
+ }
+
+ 
