@@ -4,26 +4,29 @@
  }
 
 nav {
-    background-color: rgba(87, 250, 250, 0.595);
-    border: 0.1rem solid black;
+    background: rgb(13,228,231);
+    background: linear-gradient(0deg, rgba(13,228,231,1) 28%, rgba(204,109,48,0.9989789133738601) 100%);
+    /* background-color: rgba(87, 250, 250, 0.595); */
+    /* border: 0.1rem solid black; */
  }
 
  main {
     width: 100vw;
     display: flex;
-    background-color: peru;
+    background: rgb(238,182,126);
+    background: linear-gradient(0deg, rgba(238,182,126,1) 31%, rgba(204,109,48,0.9989789133738601) 100%);
     /* border: 0.1rem solid black; */
  }
 
 section {
     /* display: flex; */
-    background-color: maroon;
+    /* background-color: maroon; */
     border: 0.1rem solid black;
  }
 
 footer {
     display: flex;
-    background-color: plum;
+    background-color: rgb(238, 182, 126);
     border: 0.1rem solid black;
     justify-content: center;
  }
@@ -31,7 +34,7 @@ footer {
 aside {
     width: 25%;
     display: inline-block;
-    background-color: olive;
+    /* background-color: olive; */
     
  }
 
@@ -52,7 +55,13 @@ aside {
  .navbar > li > a {
     font-size: 1.3em;
     text-decoration: none;
-    color: rgb(163, 71, 5);
+    color: rgb(125, 54, 3);
  }
 
- 
+ .searchBtn {
+    color: rgb(183 255 255);
+    background-color: rgb(163, 71, 5);
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 0.2rem 1rem;
+ }
