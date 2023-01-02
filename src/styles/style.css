@@ -10,18 +10,11 @@ nav {
     /* border: 0.1rem solid black; */
  }
 
- main {
-    width: 100vw;
+ .content-wrapper {
     display: flex;
     background: rgb(238,182,126);
     background: linear-gradient(0deg, rgba(238,182,126,1) 31%, rgba(204,109,48,0.9989789133738601) 100%);
     /* border: 0.1rem solid black; */
- }
-
-section {
-    /* display: flex; */
-    /* background-color: maroon; */
-    border: 0.1rem solid black;
  }
 
 footer {
@@ -34,8 +27,6 @@ footer {
 aside {
     width: 25%;
     display: inline-block;
-    /* background-color: olive; */
-    
  }
 
  .navbar { 
@@ -65,3 +56,45 @@ aside {
     font-weight: bold;
     padding: 0.2rem 1rem;
  }
+
+ .products, .clients, .articles{
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+ }
+
+ .products{
+   
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+ }
+
+ .clients{
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+ }
+
+ .articles{
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+ }
+
+ .products-item{
+    border: 1px solid black;
+    padding: 2rem;
+    margin: 1rem;
+ }
+ .products-item > img{
+    width: 100%;
+}
+
+.articles__header, .articles__all{
+    grid-column-start: 1;
+    grid-column-end: end;
+
+}
+.articles-item{
+    border: 1px solid black;
+    padding: 2rem;
+    margin: 1rem;
+ }
+ .articles-item > img{
+    width: 100%;
+}
