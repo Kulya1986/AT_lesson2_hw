@@ -67,16 +67,19 @@ aside {
     grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
  }
  .clients{
-    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
  }
  .articles{
-    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(9rem, 18rem));
  }
  .products-item, .articles-item{
     border: 0.1rem solid rgb(55, 26, 1, 0.5);
     padding: 1rem;
     margin: 0.5rem;
     background: rgb(249, 195, 144);
+ }
+
+ .products-item{
     transition: all 0.5s linear;
  }
  .products-item:hover {
@@ -102,6 +105,46 @@ aside {
     font-weight: bold;
     color: rgb(55, 26, 1);
 }
+.article-cont p {
+    font-size: 0.8em;
+    text-align: justify;
+}
+.article-title p{
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.button-read {
+    width: 70%; 
+    margin: auto; 
+    opacity: 0;   
+    transition: opacity 0.3s ease-in-out;
+}
+
+.button-read button{
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    border-width: 0.1rem 0.1rem 0.1rem 0.1rem;
+    border-style: outset;
+    border-color: rgb(55, 26, 1, 0.6);
+    background: rgb(1,112,125);
+    background: linear-gradient(0deg, rgba(1,112,125,1) 19%, rgba(0,154,172,1) 63%);
+}
+
+.button-read button a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: bolder;
+    color: rgb(248, 218, 191);
+}
+.articles-item:hover .button-read{
+    opacity: 1;
+}
+
 .products-item > p {
     font-size: 1.6em;
     text-align: center;
@@ -129,12 +172,3 @@ aside {
     margin: 0.5em 1em;
     color: rgba(238,182,126,1);
 }
-
-/* .articles-item{
-    border: 1px solid black;
-    padding: 1rem;
-    margin: 0.5rem;
- } */
- /* .articles-item > img{
-    width: 100%;
-} */
