@@ -16,14 +16,12 @@ nav {
     background: linear-gradient(0deg, rgba(238,182,126,1) 31%, rgba(204,109,48,0.9989789133738601) 100%);
     /* border: 0.1rem solid black; */
  }
-
 footer {
     display: flex;
     background-color: rgb(238, 182, 126);
-    border: 0.1rem solid black;
+    border-top: 0.1rem solid black;
     justify-content: center;
  }
-
 aside {
     width: 25%;
     display: inline-block;
@@ -72,7 +70,7 @@ aside {
  .articles{
     grid-template-columns: repeat(auto-fill, minmax(9rem, 18rem));
  }
- .products-item, .articles-item{
+ .products-item{
     border: 0.1rem solid rgb(55, 26, 1, 0.5);
     padding: 1rem;
     margin: 0.5rem;
@@ -88,6 +86,14 @@ aside {
  .products-item > img, .articles-item > img{
     width: 100%;
 }
+.articles-item{
+    border-bottom: 0.1rem solid rgb(55, 26, 1, 0.5);
+    border-right: 0.1rem solid rgb(55, 26, 1, 0.5);
+    border-radius: 4px;
+    padding: 1rem;
+    margin: 0.5rem;
+    background: rgb(249, 195, 144);
+ }
 .articles__header, .articles__all{
     grid-column-start: 1;
     grid-column-end: end;
