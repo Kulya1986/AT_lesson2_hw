@@ -2,6 +2,11 @@
     font-family: 'El Messiri', sans-serif;
     margin: 0;
  }
+body{
+    background: rgba(245,151,50,0.7) no-repeat center center fixed;
+    background-size: cover;
+    background: linear-gradient(0deg, rgba(245,151,50,0.7) 31%, rgba(245,151,50,1) 100%) no-repeat center center fixed;
+ }
 header{
     position: fixed;
     top: 0;
@@ -15,20 +20,18 @@ header{
 header:hover{
     box-shadow: 0 4px 30px 0 rgba(0,0,0,0.20), 0 8px 36px 0 rgba(0,0,0,0.15);
 }
- .content-wrapper {
+.content-wrapper {
     display: flex;
     padding-top: 4rem;
-    background: rgba(245,151,50,0.7);
-    background: linear-gradient(0deg, rgba(245,151,50,0.7) 31%, rgba(245,151,50,1) 100%);
  }
 footer {
     display: flex;
-    background-color: rgba(245,151,50,0.7);
     border-top: 0.1rem solid rgb(55, 26, 1);
     justify-content: center;
  }
 aside {
-    width: 45%;
+    width: 20%;
+    min-width: 18rem;
     display: inline-block;
  }
 a{
@@ -40,7 +43,7 @@ a:hover{
 ul{
     list-style: none;
 }
-button, .searchBtn {
+button, .searchBtn, .regBtn {
     cursor: pointer;
     border-radius: 7px;
     border-width: 0.1rem 0.1rem 0.1rem 0.1rem;
@@ -69,12 +72,12 @@ button:hover a, .searchBtn:hover a{
  li.searchForm {
     margin-left: auto;
  }
- .searchBtn {
+ .searchBtn, .regBtn {
     color: rgba(238,182,126,1);
     font-weight: bold;
     padding: 0.2rem 1rem;
  }
- .products, .logos, .articles{
+ .products, .logos, .articles, .regform{
     display: grid;
     gap: 1rem;
     padding: 1rem;
@@ -217,4 +220,6 @@ button:hover a, .searchBtn:hover a{
 .logos-item > img{
     width: 100%;
 }
-
+.regform{
+    grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr)); 
+}

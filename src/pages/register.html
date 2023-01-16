@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <title>HTML practice - lesson2 - Register</title>
+</head>
+<body>
+    <header>
+        <div class = "logo_contact"></div>
+        <nav>
+            <ul class="navbar">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li><a href="src/pages/aboutUs.html">About Us</a></li>
+                <li><a href="src/pages/register.html">Register</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li class="searchForm">
+                    <form action="src/pages/searchResults.html" method="get">
+                        <input type="text" name="searchInp" id="searchInp" placeholder="Search" size="16">
+                        <input type="submit" value="GO" class="searchBtn">
+                    </form>
+
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="content-wrapper">
+        <aside>
+            <ul class="side-nav">
+                <li class="side-nav__item">
+                    <a href="#">Cereals<img src="../images/nav_arrow.png" alt=""></a>
+                    <ul class="subnav">
+                        <li class="subnav__item">
+                            <a href="#">Buckwheat<img src="../images/nav_arrow.png" alt=""></a>
+                        </li>
+                        <li class="subnav__item">
+                            <a href="#">Oat<img src="../images/nav_arrow.png" alt=""></a>
+                        </li>
+                        <li class="subnav__item">
+                            <a href="#">Rice<img src="../images/nav_arrow.png" alt=""></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="side-nav__item">
+                    <a href="#">Vegetables<img src="../images/nav_arrow.png" alt=""></a>
+                </li>
+                <li class="side-nav__item">
+                    <a href="#">Fruits<img src="../images/nav_arrow.png" alt=""></a>
+                </li>
+                <li class="side-nav__item">
+                    <a href="#">Drinks<img src="../images/nav_arrow.png" alt=""></a>
+                    <ul class="subnav">
+                        <li class="subnav__item">
+                            <a href="#">Tea<img src="../images/nav_arrow.png" alt=""></a>
+                        </li>
+                        <li class="subnav__item">
+                            <a href="#">Coffee<img src="../images/nav_arrow.png" alt=""></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="side-nav__item">
+                    <a href="#">Snacks<img src="../images/nav_arrow.png" alt=""></a>
+                </li>
+                <li class="side-nav__item">
+                    <a href="#">Fish&Meat<img src="../images/nav_arrow.png" alt=""></a>
+                </li>
+            </ul>
+        </aside>
+        <main>
+            
+               <form action="" class="regform">
+                <label for="fname">First name:</label>
+                <input type="text" name="fname" id="fname" placeholder="First name" size="30">
+                <label for="lname">Last name:</label>
+                <input type="text" name="lname" id="lname" placeholder="Last name" size="30">
+                <label for="dob">Date of birth:</label>
+                <input type="date" name="dob" id="dob" size="30">
+                <label for="useremail">Email:</label>
+                <input type="email" name="useremail" id="useremail" placeholder="i.e. user@gmail.com" size="30">
+                <label for="pass">Password:</label>
+                <input type="password" name="pass" id="pass" minlength="10" placeholder="Password" size="30">
+                <label for="confirmpass">Confirm password:</label>
+                <input type="password" name="confirmpass" id="confirmpass" minlength="10" placeholder="Confirm password" size="30">
+                <input type="submit" value="REGISTER" class="regBtn">
+               </form>
+           
+        </main>
+        
+    </div>
+
+    <footer>
+        <p>Copyright 2023 Nataliia Kulyk</p>
+    </footer>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
