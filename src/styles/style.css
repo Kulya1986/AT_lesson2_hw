@@ -2,16 +2,22 @@
     font-family: 'El Messiri', sans-serif;
     margin: 0;
  }
-
-nav {
+header{
+    position: fixed;
+    top: 0;
+    width: 100vw;
     border-width: 0.2rem 0.2rem 0.2rem 0.2rem;
     border-style: outset;
     border-color: rgba(55, 26, 1, 0.2);
     background: rgb(245,151,50);
     background: radial-gradient(circle, rgba(245,151,50,0.98) 70%,  rgba(147,77,1,1) 90%);
- }
+}
+header:hover{
+    box-shadow: 0 4px 30px 0 rgba(0,0,0,0.20), 0 8px 36px 0 rgba(0,0,0,0.15);
+}
  .content-wrapper {
     display: flex;
+    padding-top: 4rem;
     background: rgba(245,151,50,0.7);
     background: linear-gradient(0deg, rgba(245,151,50,0.7) 31%, rgba(245,151,50,1) 100%);
  }
